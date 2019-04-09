@@ -1,5 +1,3 @@
-## revgeo
-
 ## Reverse geocoding using Nominatim (openstreetmap.org)
 
 Simple client library for the Nominatim service which provides free reverse geocoding of lat/lng coordinates to address data
