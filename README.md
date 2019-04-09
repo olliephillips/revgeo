@@ -13,7 +13,7 @@ rg.SetLatLng(52.54877605, -1.81627033283164)
 // include detailed address in response
 rg.IncludeAddress(true)
 
-// include address, used if there are rate limiting issues
+// include email address, used if there are rate limiting issues
 rg.SetEmail("me@example.com")
 
 r, err := rg.Decode()
