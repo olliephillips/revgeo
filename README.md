@@ -13,6 +13,10 @@ rg.SetLatLng(52.54877605, -1.81627033283164)
 // include detailed address in response
 rg.IncludeAddress(true)
 
+// set zoom between 0 and 18
+// 18 returns maximum detail on the location
+rg.SetZoom(10) 
+
 // include email address, used if there are rate limiting issues
 rg.SetEmail("me@example.com")
 

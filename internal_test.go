@@ -60,6 +60,14 @@ func TestSetLatLng(t *testing.T) {
 	}
 }
 
+func TestSetZoom(t *testing.T) {
+	d := NewDecoder()
+	d.SetZoom(10)
+	if d.zoom != 10 {
+		t.Errorf("Expected zoom equal to 10, got %v", d.zoom)
+	}
+}
+
 func TestIncludeAddress(t *testing.T) {
 	d := NewDecoder()
 	d.IncludeAddress(true)

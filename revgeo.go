@@ -36,6 +36,8 @@ type Response struct {
 type Address struct {
 	HouseNumber   string `json:"house_number"`
 	Road          string `json:"road"`
+	Suburb        string `json:"suburb"`
+	Village       string `json:"village"`
 	Town          string `json:"town"`
 	City          string `json:"city"`
 	County        string `json:"county"`
@@ -63,6 +65,13 @@ func (q *Query) SetLatLng(lat float64, lng float64) {
 	if lat != 0 && lng != 0 {
 		q.lat = lat
 		q.lng = lng
+	}
+}
+
+// SetZoom allows the zoom be edited default is max 18
+func (q *Query) SetZoom(zoom int) {
+	if zoom >= 0 && zoom <= 18 {
+		q.zoom = zoom
 	}
 }
 
